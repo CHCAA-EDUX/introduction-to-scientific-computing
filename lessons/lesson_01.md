@@ -1,12 +1,12 @@
 # Lesson 1:  Introduction to the computing platform _and_  basic computations in Python #
 
+1. name the components of the web-based interactive computing platform Jupyter
+2. navigate and explain file paths
+3. 
+
 ## Lesson 1.1: Jupyter - the computing platform ##
 
 ### Learning outcomes ###
-
-1. name the components of the web-based interactive computing platform Jupyter
-2. navigate and explain file paths
-3. compress and uncompress archive file format such as ZIP
 
 ### The Notebook Interface ###
 
@@ -335,3 +335,44 @@ The shell interprets a tilde (`~`) character at the start of a path to mean "the
 Another shortcut is the dash (`-`) character. `cd` will translate `-` into the previous directory I was in, which is faster than having to remember, then type, the full path. This is a very efficient way of moving back and forth between two directories – i.e. if you execute `cd -` twice, you end up back in the starting directory.
 
 The difference between `cd ..` and `cd -` is that the former brings you up, while the latter brings you back.
+
+
+## Lesson 1.3: basic computations - Python as a Calculator ##
+ 
+* entering command in the interacitve shell/Read-Evaluate-Print Loop
+* REPL allows line-by-line execution
+
+## Entering an expression
+
+* basic math operations
+
+```py
+>>> 2 + 2
+4
+>>> 2 ** 3
+8
+>>> 22 % 8
+6
+>>> 22 // 8 # integer division/floored quotient
+2
+>>> 22 / 8
+2.75
+>>> 3 * 5
+15
+>>> 5 - 2
+3
+```
+
+### Precedence
+
+* order of operations
+* order of operations (**, %, //, /, *, -, +)
+
+```py
+>>> 2 + 3 * 6
+20
+>>> (2 + 3) * 6
+30
+>>> (5 - 1) * ((7 + 1) / (3 - 1))
+16.0
+```
