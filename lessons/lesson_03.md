@@ -490,7 +490,7 @@ Load and prepare data
 
 ```py
 earthquake_data = np.loadtxt('dat/earthquake.csv', delimiter=',', skiprows=1)
-year = earthquake_data[:,0]
+year = earthquake_data[:, 0]
 sample = earthquake_data[:, 1]
 n = sample.size    
 ```

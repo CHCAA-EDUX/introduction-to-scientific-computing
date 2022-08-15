@@ -1,28 +1,26 @@
-# Lesson 1:  Introduction to the computing platform _and_  basic computations in Python #
-
-1. name the components of the web-based interactive computing platform Jupyter
-2. navigate and explain file paths
-3. 
-
-## Lesson 1.1: Jupyter - the computing platform ##
+ ## Jupyter - the computing platform ##
 
 ### Learning outcomes ###
 
+1. name the components of the web-based interactive computing platform Jupyter
+2. navigate and explain file paths
+3. compress and uncompress archive file format such as ZIP
+
 ### The Notebook Interface ###
 
-The Jupyter Notebook interface is a open source web-based application for writing documents that combine live-code with narrative text, equations and visualizations. You can watch a demo in video [LINK TO VIDEO HERE](link).
+The Jupyter Notebook interface is an open-source web-based application for writing documents that combine live code with narrative text, equations, and visualizations. You can watch a demo in the video [LINK TO VIDEO HERE](link).
 
 
-| <img src="figs/launcher.png" alt="jupyter-launcher" width="800"/> |
+| <img src="https://raw.githubusercontent.com/CHCAA-EDUX/introduction-to-scientific-computing/main/lessons/figs/launcher.png" alt="jupyter-launcher" width="800"/> |
 |:--:|
-| *The JupyterLab launcher that allows you chose a specfic notebook kernel, console, and file type.* |
+| *The JupyterLab launcher allows you chose a specific notebook kernel, console, and file type.* |
 
 A Notebook consists of two types of cells: 
 
 * Text Cells: Text cells allow you to write and render Markdown syntax. This is where you can describe and document your workflow.
 * Code Cells: Code cells allow you to write and run programming code (ex. Python).
 
-| <img src="figs/notebook.png" alt="jupyter-notebook" width="800"/> |
+| <img src="https://raw.githubusercontent.com/CHCAA-EDUX/introduction-to-scientific-computing/main/lessons/figs/notebook.png" alt="jupyter-notebook" width="800"/> |
 |:--:|
 | *A notebook file in JupyterLab that consists of a set of cells. A cell can store text or code.* |
 
@@ -37,7 +35,7 @@ Command mode is indicated by a grey cell border with a blue left margin. When yo
 
 Enter command mode by pressing `Esc` or using the mouse to click outside a cell’s editor area.
 
-The command icon palette (banner just above your notebook) provides you with short cuts for modifying, saving and running notebooks, ex. _Insert a cell below_ and _Run selected cells and advance_. JupyterLab also comes with a range of predefined short cut keys, ex. Shift+Enter to _Run selected cells and advance_. If you are on a Mac, substitute `command` for `control`. Don't type the _+_ (it means press both keys at once).
+The command icon palette (banner just above your notebook) provides you with shortcuts for modifying, saving, and running notebooks, ex. _Insert a cell below_ and _Run selected cells and advance_. JupyterLab also comes with a range of predefined shortcut keys, ex. Shift+Enter to _Run selected cells and advance_. If you are on a Mac, substitute `command` for `control`. Don't type the _+_ (it means press both keys at once).
 
 Shortcuts when in either _command mode_ (outside the cells) or _edit mode_ (inside a cell):
 ---
@@ -95,7 +93,7 @@ The usual commands for code editors:
 
 Plus the usual shortcuts for select all, cut, copy, paste, undo, etc.
 
-## Lesson 1.2: File system ##
+ ## File system ##
 
 In order for Python/JupyterLab to use  to use certain files you need to direct it to where they can find them. This means, you need to know how to navigate your file system. Therefore it is important that you understand how your computer is organised.
 
@@ -336,8 +334,7 @@ Another shortcut is the dash (`-`) character. `cd` will translate `-` into the p
 
 The difference between `cd ..` and `cd -` is that the former brings you up, while the latter brings you back.
 
-
-## Lesson 1.3: basic computations - Python as a Calculator ##
+## Python as a Calculator ##
  
 * entering command in the interacitve shell/Read-Evaluate-Print Loop
 * REPL allows line-by-line execution
@@ -375,4 +372,163 @@ The difference between `cd ..` and `cd -` is that the former brings you up, whil
 30
 >>> (5 - 1) * ((7 + 1) / (3 - 1))
 16.0
+```
+
+ ## Errors ##
+
+* `SyntaxError` error message
+* The most common reason of an error in a Python program is when a certain statement is not in accordance with the prescribed usage. Such an error is called a syntax error. The Python interpreter immediately reports it, usually along with the reason.
+
+
+```py
+>>> print 'hello'
+  File "<stdin>", line 1
+    print 'hello'
+          ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print('hello')?
+```
+* In Python 3.x, print is a built-in function and requires parentheses. The example statement violates this usage and hence syntax error is displayed.
+
+
+```py
+>>> 5 +
+  File "<stdin>", line 1
+    5 +
+      ^
+SyntaxError: invalid syntax
+```
+
+
+```py
+>>> 2 +* 3
+  File "<stdin>", line 1
+    2 +* 3
+       ^
+SyntaxError: invalid syntax
+>>> 
+```
+
+* breaking down the error message
+    * The file name where the invalid syntax was encountered
+    * The line number and reproduced line of code where the issue was encountered
+    * A caret (^) on the line below the reproduced code, which shows you the point in the code that has a problem
+    * The error message that comes after the exception type SyntaxError, which can provide information to help you determine the problem
+
+```sh
+File "src/tracebackerror.py", line 11
+    2 +* 3
+       ^
+SyntaxError: invalid syntax
+```
+
+#### Type of errors
+
+* Important built-in exceptions in Python.
+
+| Exception | Description |
+| -- | -- |
+| AssertionError | Raised when the assert statement fails. |
+| AttributeError | Raised on the attribute assignment or reference fails. |
+| EOFError | Raised when the input() function hits the end-of-file condition. |
+| FloatingPointError | Raised when a floating point operation fails. |
+| GeneratorExit | Raised when a generator's close() method is called. |
+| ImportError | Raised when the imported module is not found. |
+| IndexError | Raised when the index of a sequence is out of range. |
+| KeyError | Raised when a key is not found in a dictionary. |
+| KeyboardInterrupt | Raised when the user hits the interrupt key (Ctrl+c or delete) |.
+| MemoryError | Raised when an operation runs out of memory. |
+| NameError | Raised when a variable is not found in the local or global scope. |
+| NotImplementedError | Raised by abstract methods. |
+| OSError | Raised when a system operation causes a system-related error. |
+| OverflowError | Raised when the result of an arithmetic operation is too large to be represented. |
+| ReferenceError | Raised when a weak reference proxy is used to access a garbage collected referent. |
+| RuntimeError | Raised when an error does not fall under any other category. |
+| StopIteration | Raised by the next() function to indicate that there is no further item to be returned by the iterator. |
+| SyntaxError | Raised by the parser when a syntax error is encountered. |
+| IndentationError | Raised when there is an incorrect indentation. |
+| TabError | Raised when the indentation consists of inconsistent tabs and spaces. |
+| SystemError | Raised when the interpreter detects internal error. |
+| SystemExit | Raised by the sys.exit() function. |
+| TypeError | Raised when a function or operation is applied to an object of an incorrect type. |
+| UnboundLocalError | Raised when a reference is made to a local variable in a function or method, but no value has been bound to that variable. |
+| UnicodeError | Raised when a Unicode-related encoding or decoding error occurs. |
+| UnicodeEncodeError | Raised when a Unicode-related error occurs during encoding. |
+| UnicodeDecodeError | Raised when a Unicode-related error occurs during decoding. |
+| UnicodeTranslateError | Raised when a Unicode-related error occurs during translation. |
+| ValueError | Raised when a function gets an argument of correct type but improper value. |
+| ZeroDivisionError | Raised when the second operand of a division or module operation is zero. |
+
+* `IndexError`
+
+```py
+>>> l = [1, 1, 2, 3, 5]
+>>> l[5]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+```
+
+* `ModuleNotFoundError`
+
+```py
+>>> import notamodule
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'notamodule'
+```
+
+* `KeyError`
+
+```py
+>>> captains = {'Enterprise' : 'Kirk', ' Voyager' : 'Janeway', 'DS9' : 'Sisko'}
+>>> captains['BorgCube']
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'BorgCube'
+```
+
+* `ImportError`
+
+```py
+>>> from math import borgcube
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ImportError: cannot import name 'borgcube' from 'math' (unknown location)
+```
+
+* `NameError`
+
+```py
+>>> borg
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'borg' is not defined
+```
+
+* `ValueError`
+
+```py
+>>> int('borg')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: 'borg
+```
+
+## Advanced Topic: Linting ##
+
+Linting highlights syntactical and stylistic problems in your Python source code, which oftentimes helps you identify and correct subtle programming errors or unconventional coding practices that can lead to errors. For example, linting detects use of an uninitialized or undefined variable, calls to undefined functions, missing parentheses, and even more subtle issues such as attempting to redefine built-in types or functions.  Linting is thus distinct from Formatting because linting analyzes how the code runs and detects errors whereas formatting only restructures how code appears. (see `linting.py`)
+
+```py 
+# install
+!pip install pycodestyle pycodestyle_magic flake8
+
+# load
+%load_ext pycodestyle_magic
+
+# use
+%%pycodestyle
+def square_of_number(
+ num1, num2, num3, 
+   num4):
+	return num1**2, num2**2, num3**2, num4**2
 ```
