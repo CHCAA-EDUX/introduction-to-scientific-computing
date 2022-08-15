@@ -411,3 +411,7 @@ ax.plot_trisurf(x, y, z, triangles=tri.triangles, cmap='viridis', linewidths=0.2
 ax.set_xlim(-1, 1); ax.set_ylim(-1, 1); ax.set_zlim(-1, 1)
 plt.savefig('mobius_strip.png', dpi=300)
 ```
+
+| <img src="https://github.com/CHCAA-EDUX/introduction-to-scientific-computing/blob/main/lessons/figs/mobius_strip.png?raw=true" alt="rotatecoins" width="600"/> |
+|:--:|
+| *Möbius strip plotted with `matplotlib`'s 3d toolkit.* |
