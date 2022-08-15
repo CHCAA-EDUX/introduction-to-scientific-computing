@@ -371,3 +371,43 @@ plt.close()
 | <img src="https://github.com/CHCAA-EDUX/introduction-to-scientific-computing/blob/main/lessons/figs/sinosoidal_relief_rotate.png?raw=true" alt="rotatecoins" width="600"/> |
 |:--:|
 | *Change the elevation to 60 degrees (that is, 60 degrees above the x-y plane) and the azimuth to 35 degrees (that is, rotated 35 degrees counter-clockwise about the z-axis).* |
+
+### Example: Visualizing a Möbius Strip ###
+
+A Möbius strip is similar to a strip of paper glued into a loop with a half-twist. Topologically, it's quite interesting because despite appearances it has only a single side! Here we will visualize such an object using `matplotlib`'s 3d tools. The key to creating the Möbius strip is to think about it's parametrization: it's a 2d strip, so we need two intrinsic dimensions. Let's call them $\theta$, which ranges from $0$ to $2\pi$ around the loop, and $w$ which ranges from $-1$ to $1$ across the width of the strip.
+
+```py
+theta = np.linspace(0, 2 * np.pi, 30)
+w = np.linspace(-0.25, 0.25, 8)
+w, theta = np.meshgrid(w, theta)
+```
+
+From this parametrization, we must determine the (x, y, z) positions of the embedded strip. There are two rotations happening: one is the position of the loop about its center (what we've called $\theta$), while the other is the twisting of the strip about its axis (we'll call this $\phi$). For a Möbius strip, we must have the strip makes half a twist during a full loop, or $\Delta \phi = \Delta \theta / 2$.
+
+```py
+phi = 0.5 * theta
+```
+
+We can use trigonometry to derive the three-dimensional embedding. We'll define $r$, the distance of each point from the center, and use this to find the embedded $(x,y,z)$ coordinates
+
+```py
+# radius in x-y plane
+r = 1 + w * np.cos(phi)
+
+x = np.ravel(r * np.cos(theta))
+y = np.ravel(r * np.sin(theta))
+z = np.ravel(w * np.sin(phi))
+```
+
+To plot the object, we must make sure the triangulation is correct. The best way to do this is to define the triangulation within the underlying parametrization, and then let `matplotlib` project this triangulation into the 3d space of the Möbius strip. This can be accomplished as follows:
+
+```py
+# triangulate in the underlying parametrization
+from matplotlib.tri import Triangulation
+tri = Triangulation(np.ravel(w), np.ravel(theta))
+
+ax = plt.axes(projection='3d')
+ax.plot_trisurf(x, y, z, triangles=tri.triangles, cmap='viridis', linewidths=0.2);
+ax.set_xlim(-1, 1); ax.set_ylim(-1, 1); ax.set_zlim(-1, 1)
+plt.savefig('mobius_strip.png', dpi=300)
+```
