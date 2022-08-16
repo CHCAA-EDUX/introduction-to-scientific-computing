@@ -87,6 +87,8 @@ for variable in collection:
 
 We can call the loop variable anything we like, but there must be a colon at the end of the line starting the loop, and we must indent anything we want to run inside the loop. Unlike many other languages, there is no command to signify the end of the loop body (e.g. `end for`); what is indented after the `for` statement belongs to the loop.
 
+ > **_A loop:_** In computer programming, a loop is a sequence of instruction s that is continually repeated until a certain condition is reached. Typically, a certain process is done, such as getting an item of data and changing it, and then some condition is checked such as whether a counter has reached a prescribed number.
+
 ### Naming the loop variable ###
 
 In the example the _loop variable_ was named `num` a mnemonic for 'number'. Just as with variables, you can name loop variables whatever you want.
@@ -179,16 +181,31 @@ for filename in filenames:
     plt.show()
 ```
 
-| <img src="https://swcarpentry.github.io/python-novice-inflammation/fig/03-loop_49_1.png" alt="inflammation01" width="400"/> |
+| <img src="https://swcarpentry.github.io/python-novice-inflammation/fig/03-loop_49_1.png" alt="inflammation01" width="600"/> |
 |:--:|
 | *`inflammation-01.csv`* |
 
 
-| <img src="https://swcarpentry.github.io/python-novice-inflammation/fig/03-loop_49_3.png" alt="inflammation2" width="400"/> |
+| <img src="https://swcarpentry.github.io/python-novice-inflammation/fig/03-loop_49_3.png" alt="inflammation2" width="600"/> |
 |:--:|
 | *`inflammation-02.csv`* |
 
 
-| <img src="https://swcarpentry.github.io/python-novice-inflammation/fig/03-loop_49_5.png" alt="inflammation" width="400"/> |
+| <img src="https://swcarpentry.github.io/python-novice-inflammation/fig/03-loop_49_5.png" alt="inflammation" width="600"/> |
 |:--:|
 | *`inflammation-03.csv`* |
+
+The plots generated for the second file, `inflammation-02.csv`, look very similar to the plots for the first file, `inflammation-01.csv`: their average plots show similar 'noisy' rises and falls; their maxima plots show exactly the same linear rise and fall; and their minima plots show similar staircase structures.
+
+The third dataset, `inflammation-03.csv`, shows much noisier average and maxima plots that are far less suspicious than the first two datasets, however the minima plot shows that the third dataset minima is consistently zero across every day of the trial. If we produce a heat map for the third data file we see the following:
+
+| <img src="https://swcarpentry.github.io/python-novice-inflammation/fig/inflammation-03-imshow.svg" width="600"/> |
+|:--:|
+| *`inflammation-03.csv`* |
+
+We can see that there are zero values sporadically distributed across all patients and days of the clinical trial, suggesting that there were potential issues with data collection throughout the trial. In addition, we can see that the last patient in the study didn’t have any inflammation flare-ups at all throughout the trial, suggesting that they may not even suffer from arthritis.
+
+The datasets appear to fall into two categories:
+
+1. seemingly 'ideal' datasets that display suspicious maxima and minima (such as inflammation-01.csv and inflammation-02.csv)
+2. 'noisy' datasets that show concerning data collection issues such as sporadic missing values and even an unsuitable candidate making it into the clinical trial.
