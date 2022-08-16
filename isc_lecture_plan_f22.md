@@ -1,6 +1,8 @@
-# Lecture plan for Introduction to Scienctific Computing 2022 #
+# Lecture plan for Introduction to Scientific Computing 2022 #
 
 ## Instructor team ##
+
+* Stephan Smuts
 
 ## Lecture plan ##
 
