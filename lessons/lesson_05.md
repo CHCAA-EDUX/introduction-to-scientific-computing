@@ -89,6 +89,13 @@ We can call the loop variable anything we like, but there must be a colon at the
 
  > **_A loop:_** In computer programming, a loop is a sequence of instruction s that is continually repeated until a certain condition is reached. Typically, a certain process is done, such as getting an item of data and changing it, and then some condition is checked such as whether a counter has reached a prescribed number.
 
+
+| <img src="https://github.com/CHCAA-EDUX/introduction-to-scientific-computing/blob/main/lessons/figs/for-loop.png?raw=true" alt="for loop" width="400"/> |
+|:--:|
+| *General structure of a standard `for` loop in Python* |
+
+
+
 ### Naming the loop variable ###
 
 In the example the _loop variable_ was named `num` a mnemonic for 'number'. Just as with variables, you can name loop variables whatever you want.
