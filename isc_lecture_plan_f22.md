@@ -13,6 +13,6 @@
 | 5 | 26-08 | CN: 19:00-21:00 <br /> DK: 13:00-15:00 | Loops and nesting |  Lesson 5.1: <br /> Lesson 5.2: | | | | |
 | 6 | 29-08 | CN: 19:00-21:00 <br /> DK: 13:00-15:00 | Control flow |  Lesson 6.1: <br /> Lesson 6.2: | | | | |
 | 7 | 30-08 | CN: 15:00-17:00 <br /> DK: 09:00-11:00 | Image Processing and Visualization \#2 |  Lesson 7.1: <br /> Lesson 7.2: | Image files, 3d visualization | `seaborn`, `scikit-image` | | |
-| 8 | 31-08 | CN: 19:00-21:00 <br /> DK: 13:00-15:00 | Strings, dictionaries, errors and exceptions |  Lesson 8.1: <br /> Lesson 8.2: | | | | |
+| 8 | 31-08 | CN: 19:00-21:00 <br /> DK: 13:00-15:00 | Strings, dictionaries, errors and exceptions |  Lesson 8.1: <br /> Lesson 8.2: | | | |LH |
 | 9 | 01-09 | CN: 15:00-17:00 <br /> DK: 09:00-11:00 |  Files i/o, formats for representing structured data (csv and json) |  Lesson 9.1: <br /> Lesson 9.2: | | `pandas`, `json` | | |
-| 10 | 02-09 | CN: 19:00-21:00 <br /> DK: 13:00-15:00 | | | | | | |
+| 10 | 02-09 | CN: 19:00-21:00 <br /> DK: 13:00-15:00 | | | | | |LH |
