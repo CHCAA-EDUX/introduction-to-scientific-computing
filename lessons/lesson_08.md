@@ -1,4 +1,4 @@
-# Leeson 8: Strings, Dictionaries, more on Functions, Errors and Exceptions #
+# Leeson 8: Strings, Dictionaries, and more about Functions #
 
 [source](https://swcarpentry.github.io/python-novice-inflammation/08-func/index.html)
 
@@ -9,7 +9,7 @@ Remember the string data type `str` from [lesson 2]()? IN Python, strings is a (
 
 > **_String Encoding:_** Since Python 3.0, strings are stored as Unicode, i.e. each character in the string is represented by a code point. So, each string is just a sequence of Unicode code points. For efficient storage of these strings, the sequence of code points is converted into a set of bytes. The process is known as encoding. There are various encodings present which treat a string differently. The popular encodings being utf-8, ascii, etc. Using the string `encode()` method, you can convert unicode strings into any encodings supported by Python. By default, Python uses utf-8 encoding.
 
-### Single or double quotes?
+#### Single or double quotes? ####
 
 Valid string assignment
 ```py
@@ -26,7 +26,7 @@ Valid
 spock = "It is the lot of 'man' to strive no matter how content he is."
 ```
 
-#### Escape characters
+##### Escape characters #####
 
 Valid
 ```py
@@ -50,7 +50,7 @@ it's just a matter of finding it.
 (Picard)
 ```
 
-#### Raw strings
+##### Raw strings #####
 * ignores escape characters
 ```py
 >>> print(r'Things are only impossible until they\'re not.')
@@ -58,12 +58,12 @@ Things are only impossible until they\'re not.
 ```
 * useful for Win paths and regular expressions
 
-#### Multiline strings
+##### Multiline strings #####
 * escape characters are optional, BUT may impact your IDE
 * docstrings use multiline strings
 
 
-### Indexing and Slicing
+#### Indexing and Slicing ####
 * string is sequence data
 * zero indexing again
 
@@ -83,11 +83,11 @@ Things are only impossible until they\'re not.
 'illogical.'
 ```
 
-### `in` and `not in` operators for strings
+#### `in` and `not in` operators for strings ####
 
 * as sequence data, `in` and `no in` work similarly to lists
 
-## String concatenation and interpolation
+### String concatenation and interpolation ###
 
 ```py
 >>> name = 'Janeway'
@@ -106,20 +106,20 @@ Hello, my name is Janeway. I am 27 years old
 print(f'Hello, my name is {"Kathryn " + name}. I am {age + 8} years old')
 ```
 
-## String methods
+### String methods ###
 
 ```
 >>> name = 'Janeway'
 >>> print(dir(name))
 ['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
 ```
-### Casefolding alphabetic characters
+#### Casefolding alphabetic characters ####
 
 * casefolding with `upper()` and `lower()`
   * return new string/does not modify existing string var
   * `islower()` and `isupper()` for testing the case of the full string
 
-### `ìs<feature>()` methods
+#### `ìs<feature>()` methods ####
 
 | method | True | False |
 | --- | --- | --- |
@@ -139,7 +139,7 @@ While True:
   print('Passwords can only have letters and numbers.')
 ```
 
-### `startswith()` and `endswith()`
+#### `startswith()` and `endswith()` ####
 
 ```py
 >>> 'Captain Kathryn Janeway'.startswith('Captain')
@@ -150,7 +150,7 @@ True
 True
 ```
 
-### `join()` and `split()`
+#### `join()` and `split()` ####
 
 * tokenization with `split()`
 ```py
@@ -180,7 +180,7 @@ True
 ["Compassion: that's the one things no machine ever had", " Maybe it's the one thing that keeps men ahead of them", '']
 ```
 
-### `partition()`
+#### `partition()` ####
 
 * pre-post separator, return substrings in tuple, separator inclusive
 * partitioning is not recursive/splits on first occurrence only
@@ -190,7 +190,7 @@ True
 before, sep, after = 'James T Kirk'.partition('T')
 ```
 
-### `rjust()`, `ljust()`, `center()`
+#### `rjust()`, `ljust()`, `center()` ####
 
 * padded string with spaces to justify text
 
@@ -234,7 +234,7 @@ f1-score............  0.75
 support.............   254
 ```
 
-### `strip()`, `rstrip()`, `lstrip()`
+#### `strip()`, `rstrip()`, `lstrip()` ####
 
 * strip whitespaces (space, tab, newline)
 
@@ -251,8 +251,8 @@ Highly illogical.
 Highly illogical.
 ```
 
----
-**On the safe side**
+
+#### On the safe side ####
 
 The control character (sequence of) that indicates newline (aka. End Of Line, Next Line or line break) depend on your operating system (or the operating system used to generate the file, you are processing). Most systems use or combune Carriage Return (CR) and Line Feed. In typewriters change line requires two axes of motion, _down_ and _across_ respectively, but in software these can be combined into one action CR and LF. Unix and Unix-like operating systems only uses LF for newline with the `\n` escape character, while Windows maintain the full CR LF sequence with the escape sequence `\r\n`. When removing trailing newlines from strings in Python `rstrip('\n')` is normally sufficient, but to be on the safe side you can use the `os.linesep` variable:
 ```
@@ -261,8 +261,8 @@ The control character (sequence of) that indicates newline (aka. End Of Line, Ne
 >>> newline_text.rstrip(os.linesep)
 'Highly illogical.'
 ```
----
-## Numeric values of characters
+
+### Numeric values of characters ###
 * all information is stored as strings of binary numbers (bytes). Every text character can therefore be converted to a number, a so-called _Unicode code point_
 ```py
 >>> for char in "abc": print(ord(char))
@@ -281,13 +281,98 @@ True
 
 ## Dictionaries ##
 
+The dictionary data type `dict` is a mutable collection of values, stored as key-value pairs. Like the list, dictionaries are used to store _collections_ of data and both can be used to store multi-dimensional data.
+
+```py
+book = {'title': 'Neuromancer', 'author': "Gibson, William" , 'genre': 'Science fiction'}
+```
+
+Unlike lists and `numpy` arrays, dictionaries are unordered
+
+```py
+book = {'title': 'Neuromancer', 'author': "Gibson, William" , 'genre': 'Science fiction'}
+
+permuatation = {'genre': 'Science fiction', 'author': "Gibson, William", 'title': 'Neuromancer'}
+
+book == permutation
+True
+```
+
+But insertion order is remembered since Python 3.7
+
+```py
+
+list(book)
+['title', 'author', 'genre']
+
+list(permutation)
+['genre', 'author', 'title']
+```
+
+Dictionaries is Python's builtin implementation of hash tables, that is, an unordered collection of key-value pairs, where each key is unique. 
+
+* used to implement map and set data structures in most common programming languages.
+* offer a combination of efficient lookup, insert and delete operations.
+* neither arrays nor linked lists can achieve this
+
+Entering and ordering data with dictionaries (building a simple book-author database)
+
+```py
+books = {'Neuromancer': 'Gibson, William', 'VALIS': 'Dick, Phillip K.'}
+
+while True:
+    print('Enter a book: (black to quit)')
+    title = input()
+    if title == '':
+        break
+    
+    if title in books:
+        print(f'{title} is written by {books[title]}')
+    else:
+        print(f'We do not have author information for {title}')
+        print(f'Please enter the author of {titile}':)
+        author = input()
+        books[title] = author
+        print('Thank you, the book database is now updated.')
+```
+
+NB. you still need to save the database to re-use new entries
+
+Multiple assignment with `items()` method
+
+```py
+for (title, author) in books.items():
+    print(f'{author} is the author of {title}')
+
+Gibson, William is the author of Neuromancer
+Dick, Phillip K is the author of VALIS
+```
 
 
+`setdefault()` method to ensure that a key exists
 
+```py
+import pprint
+text = 'Cyberspace. A consensual hallucination experienced daily by billions of legitimate operators, in every nation.'
 
+counter = dict()
+for char in text:
+    counter.setdefault(char, 0)
+    counter[char] = counter[char] + 1
 
+pprint.pprint(counter)
+```
 
+Nested dictionaries
 
+```py
+all_books = {
+    'Neuromancer':{'author': 'Gibson, William', 'year': 1984 , 'genre': 'Science fiction' },
+    'VALIS': {'author': 'Dick, Phillip K.' , 'year': 1981, 'genre': 'Science fiction' },
+    'Schrödingers Cat Trilogy': {'author': 'Wilson, Robert A.' , 'year': 1979, 'genre': 'Science fiction' }
+    }
+
+```
 ## More on Functions: Modularity, Testing and Documenting ##
 
 Once we start putting things in functions in order to re-use them, we need to start testing that those functions are working correctly. Start by writing a function to offset a dataset so that it’s mean value shifts to a user-defined value
