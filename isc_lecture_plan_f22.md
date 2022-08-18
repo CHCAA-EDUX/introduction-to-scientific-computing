@@ -10,7 +10,7 @@
 
 | Lesson | Date | Time | Topic | Curriculum | Library | Lecturer | Instructor(-s) |
 | :-: | :-: | :-: | :-: | - | - | - | - |
-| 1 | 22-08 | CN: 19:00-21:00 <br /> DK: 13:00-15:00 | Introduction to the computing platform <br /> _and_  basic computations in Python | 1.1: Jypyter <br /> 1.2: File System <br /> 1.3: Python as a Calculator <br /> 1.4: Errors | NA |  | SS, FH |
+| 1 | 22-08 | CN: 19:00-21:00 <br /> DK: 13:00-15:00 | Introduction to the computing platform <br /> _and_  basic computations in Python | 1.1: Jypyter <br /> 1.2: File System <br /> 1.3: Python as a Calculator <br /> 1.4: Errors | NA |  | SS |
 | 2 | 23-08 | CN: 15:00-17:00 <br /> DK: 09:00-11:00  | Simple data types, functions, and modules | 2.1: Simple data types <br /> 2.2: Variable assignment <br /> 2.3: Functions <br /> 2.4: Modules | `matplotlib`, `seaborn` | | SS, FH|
 | 3 | 24-08 | CN: 19:00-21:00 <br /> DK: 13:00-15:00 | Container data types |  3.1: Lists <br /> 3.2: Arrays <br /> 3.3: Dataframes | `numpy`, `pandas` | | SS, FH |
 | 4 | 25-08 | CN: 15:00-17:00 <br /> DK: 09:00-11:00 | Visualization \#1 |  4.1: Data visualization <br /> 4.2: Seaborn |  `matplotlib`, `seaborn` | | SS |
