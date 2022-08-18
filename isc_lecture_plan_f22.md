@@ -1,20 +1,22 @@
 # Lecture plan for Introduction to Scientific Computing 2022 #
 
 ## Instructor team ##
-Stephan Smuts (SS)
-Frida Hæstrup (FH)
+
+* Stephan Smuts (SS)
+* Frida Hæstrup (FH)
+* Lasse Hansen (LH)
 
 ## Lecture plan ##
 
-| Lesson | Date | Time | Topic | Curriculum | Notes | Library | Lecturer | Instructor(-s) |
-| :-: | :-: | :-: | :-: | - | - | - | - | - |
-| 1 | 22-08 | CN: 19:00-21:00 <br /> DK: 13:00-15:00 | Introduction to the computing platform <br /> _and_  basic computations in Python | Lesson 1.1: <br /> Lesson 1.2: | <ul><li>Jupyter/interactive vs. CLI</li><li>file paths</li><li>variable assignment</li></ul>  |  | | SS, FH |
-| 2 | 23-08 | CN: 15:00-17:00 <br /> DK: 09:00-11:00  | Simple data types, functions, and modules | Lesson 2.1: <br /> Lesson 2.2: |  string manipulation | `scipy`, `scikit-learn` | | SS, FH|
-| 3 | 24-08 | CN: 19:00-21:00 <br /> DK: 13:00-15:00 | Container data types |  Lesson 3.1: <br /> Lesson 3.2: | Lists, arrays, dataframes | `numpy`, `pandas` | | SS, FH |
-| 4 | 25-08 | CN: 15:00-17:00 <br /> DK: 09:00-11:00 | Visualization \#1 |  Lesson 4.1: <br /> Lesson 4.2: | 2d visualization | `matplotlib` | | SS |
-| 5 | 26-08 | CN: 19:00-21:00 <br /> DK: 13:00-15:00 | Loops and nesting |  Lesson 5.1: <br /> Lesson 5.2: | | | | SS |
-| 6 | 29-08 | CN: 19:00-21:00 <br /> DK: 13:00-15:00 | Control flow |  Lesson 6.1: <br /> Lesson 6.2: | | | | SS |
-| 7 | 30-08 | CN: 15:00-17:00 <br /> DK: 09:00-11:00 | Image Processing and Visualization \#2 |  Lesson 7.1: <br /> Lesson 7.2: | Image files, 3d visualization | `seaborn`, `scikit-image` | | SS |
-| 8 | 31-08 | CN: 19:00-21:00 <br /> DK: 13:00-15:00 | Strings, dictionaries, errors and exceptions |  Lesson 8.1: <br /> Lesson 8.2: | | | | LH |
-| 9 | 01-09 | CN: 15:00-17:00 <br /> DK: 09:00-11:00 |  Files i/o, formats for representing structured data (csv and json) |  Lesson 9.1: <br /> Lesson 9.2: | | `pandas`, `json` | | |
-| 10 | 02-09 | CN: 19:00-21:00 <br /> DK: 13:00-15:00 | | | | | |LH |
+| Lesson | Date | Time | Topic | Curriculum | Library | Lecturer | Instructor(-s) |
+| :-: | :-: | :-: | :-: | - | - | - | - |
+| 1 | 22-08 | CN: 19:00-21:00 <br /> DK: 13:00-15:00 | Introduction to the computing platform <br /> _and_  basic computations in Python | 1.1: Jypyter <br /> 1.2: File System <br /> 1.3: Python as a Calculator <br /> 1.4: Errors | | | SS, FH |
+| 2 | 23-08 | CN: 15:00-17:00 <br /> DK: 09:00-11:00  | Simple data types, functions, and modules | 2.1: Simple data types <br /> 2.2: Variable assignment <br /> 2.3: Functions <br /> 2.4: Modules | `scipy`, `scikit-learn` | | SS, FH|
+| 3 | 24-08 | CN: 19:00-21:00 <br /> DK: 13:00-15:00 | Container data types |  3.1: Lists <br /> 3.2: Arrays <br /> 3.3: Dataframes | `numpy`, `pandas` | | SS, FH |
+| 4 | 25-08 | CN: 15:00-17:00 <br /> DK: 09:00-11:00 | Visualization \#1 |  4.1: Data visualization <br /> 4.2: Seaborn |  `matplotlib`, `seaborn` | | SS |
+| 5 | 26-08 | CN: 19:00-21:00 <br /> DK: 13:00-15:00 | Loops and nesting |  5.1: Repeat actions <br /> 5.2: Read multiple files | `matplotlib`, `glob` | | SS |
+| 6 | 29-08 | CN: 19:00-21:00 <br /> DK: 13:00-15:00 | Control flow |  6.1: Boolean values <br /> 6.2: Control flow statements <br /> 6.3: Detecting problems | | | | SS |
+| 7 | 30-08 | CN: 15:00-17:00 <br /> DK: 09:00-11:00 | Image Processing and Visualization \#2 |  7.1: Images are arrays <br /> 7.2: Displaying images <br /> 7.3: Data type and image values <br /> 7.4: 3d visualiztion | `scikit-image`, `matplotlib` | | SS |
+| 8 | 31-08 | CN: 19:00-21:00 <br /> DK: 13:00-15:00 | Strings, dictionaries, errors and exceptions |  8.1: Working with strings <br /> 8.2: Dictionaries <br /> 8.3: More on functions | `numpy` | | LH |
+| 9 | 01-09 | CN: 15:00-17:00 <br /> DK: 09:00-11:00 |  Files i/o, formats for representing structured data (csv and json) |  9.1: Read and write files <br /> 9.2: CSV files <br /> JSON files | `numpy`, `pandas`, `json`, `requests` | | |
+| 10 | 02-09 | CN: 19:00-21:00 <br /> DK: 13:00-15:00 | | | | |LH |
