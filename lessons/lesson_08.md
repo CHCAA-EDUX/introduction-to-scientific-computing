@@ -284,7 +284,7 @@ True
 'b'
 ```
 
-## Dictionaries ##
+## Lesson 8.2: Dictionaries ##
 
 The dictionary data type `dict` is a mutable collection of values, stored as key-value pairs. Like the list, dictionaries are used to store _collections_ of data and both can be used to store multi-dimensional data.
 
@@ -378,7 +378,7 @@ all_books = {
     }
 
 ```
-##  Lesson 8.2: More on Functions: Modularity, Testing and Documenting ##
+##  Lesson 8.3: More on Functions: Modularity, Testing and Documenting ##
 
 Once we start putting things in functions in order to re-use them, we need to start testing that those functions are working correctly. Start by writing a function to offset a dataset so that it’s mean value shifts to a user-defined value
 
