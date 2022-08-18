@@ -1,4 +1,7 @@
- ## Jupyter - the computing platform ##
+# Lesson 1: Introduction to the computing platform and  basic computations in Python #
+
+
+## Lesson 1.1: Jupyter - the computing platform ##
 
 ### Learning outcomes ###
 
@@ -6,7 +9,7 @@
 2. navigate and explain file paths
 3. compress and uncompress archive file format such as ZIP
 
-### The Notebook Interface ###
+###  The Notebook Interface ###
 
 The Jupyter Notebook interface is an open-source web-based application for writing documents that combine live code with narrative text, equations, and visualizations. You can watch a demo in the video [LINK TO VIDEO HERE](link).
 
@@ -93,7 +96,7 @@ The usual commands for code editors:
 
 Plus the usual shortcuts for select all, cut, copy, paste, undo, etc.
 
- ## File system ##
+## ## Lesson 1.2 File system ##
 
 In order for Python/JupyterLab to use  to use certain files you need to direct it to where they can find them. This means, you need to know how to navigate your file system. Therefore it is important that you understand how your computer is organised.
 
@@ -334,7 +337,7 @@ Another shortcut is the dash (`-`) character. `cd` will translate `-` into the p
 
 The difference between `cd ..` and `cd -` is that the former brings you up, while the latter brings you back.
 
-## Python as a Calculator ##
+## ## Lesson 1.3: Python as a Calculator ##
  
 * entering command in the interacitve shell/Read-Evaluate-Print Loop
 * REPL allows line-by-line execution
@@ -374,7 +377,7 @@ The difference between `cd ..` and `cd -` is that the former brings you up, whil
 16.0
 ```
 
- ## Errors ##
+## Lesson 1.4: Errors (Optional) ##
 
 * `SyntaxError` error message
 * The most common reason of an error in a Python program is when a certain statement is not in accordance with the prescribed usage. Such an error is called a syntax error. The Python interpreter immediately reports it, usually along with the reason.
@@ -512,23 +515,4 @@ NameError: name 'borg' is not defined
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 ValueError: invalid literal for int() with base 10: 'borg
-```
-
-## Advanced Topic: Linting ##
-
-Linting highlights syntactical and stylistic problems in your Python source code, which oftentimes helps you identify and correct subtle programming errors or unconventional coding practices that can lead to errors. For example, linting detects use of an uninitialized or undefined variable, calls to undefined functions, missing parentheses, and even more subtle issues such as attempting to redefine built-in types or functions.  Linting is thus distinct from Formatting because linting analyzes how the code runs and detects errors whereas formatting only restructures how code appears. (see `linting.py`)
-
-```py 
-# install
-!pip install pycodestyle pycodestyle_magic flake8
-
-# load
-%load_ext pycodestyle_magic
-
-# use
-%%pycodestyle
-def square_of_number(
- num1, num2, num3, 
-   num4):
-	return num1**2, num2**2, num3**2, num4**2
 ```

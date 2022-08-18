@@ -3,13 +3,11 @@
 [source](https://www.programiz.com/python-programming/file-operation)
 ### Learning Outcomes ###
 
-1. Open a file
-2. Read or write
-3. Close the file
-4. 1-3 for txt, csv, json
+1. Read, write, and save `txt`, `csv` and `json` files
+2. Explain the difference between `csv` and `json`
+3. Serialize and deserialize a Python object structure with `pickle`
 
-
-## Read and write files ##
+## Lesson 9.1: Read and write files ##
 
 Python has a built-in `open()` function to open a file. This function returns a file object, also called a handle, as it is used to read or modify the file accordingly.
 
@@ -146,7 +144,7 @@ for item in data:
     counter += 1
 ```
 
-## `csv` files ##
+## Lesson 9.2: `csv` files ##
 
 A `csv` file is a plain text file. `csv` stands for 'comma-separated values' indicating that our data is separated by commas, structuring our data in 2d tabular form. Each line in the file represents a row in a table and the commas indicate the division into cells.
 
@@ -213,3 +211,73 @@ with open('data/world-happiness-report-short-2021.dat', "a+", newline="") as f:
 ```
 
 The `writerow()`method takes a list as an argument. The list will be a row in the outputted `csv` file and each value in the list is placed in a cell.
+
+
+##  Lesson 9.3: `json` data ##
+
+Another format used for exchanging data is `json`. It is a lightweight standard for exchanging structured data. Data sets can be stored as `json` files and are often used when sending and receiving data from servers. A `json` file plain text file, but has the format of an *object*. `json` data are text-based - meaning that we can (learn to) read them in a normal text editor - even though they might look rather cryptic at first sight. `json` stands for **J**ava**S**cript **O**bject **N**otation and was originally developed for JavaScript. However, `json` files are saved as plain text, so we do not need to learn/write any JavaScript in order to work with `json` data. 
+
+
+The grammar of JSON:
+
+| Syntax       | **Datatype**     |
+| :----------- | :----------: |
+|  { and } | contain an object  |
+| [ and ]   | contain elements of an array |
+| :         | separates a key from a value in an object |
+| ,         | separates the elements in an array |
+| " ... "   | contain a string |
+| e.g. 4    | integers |
+| true, false, null | literals |
+
+Read a JSON file
+
+```py
+import json
+with open("data/world-happiness-report-2021.json") as json_file:
+    data = json.load(json_file)
+
+print(f"Type: {type(data)}")
+```
+
+`json` can contain infinitely complex data
+
+```py
+print(data.keys())
+print(data['China'].keys())
+print(data['Denmark']['Logged GDP per capita'])
+```
+
+`pandas` also has `json` functionality
+
+```py
+import pandas as pd
+
+df = pd.read_json("data/world-happiness-report-2021.json").transpose()
+print(df)
+print(df.loc['Denmark'])
+```
+
+`transpose()` reflects the dataframe over its main diagonal by writing rows as columns in order to make our `Country name` index.
+
+### Fetch and convert Data From the URL to a String ###
+
+Many websites and APIs use `json` format for their data. It is therefore highly useful to learn to work with `json` data.
+
+Fetch `json` data with the `requests` library and 
+
+```py
+import requests 
+import json
+
+url = requests.get("https://jsonplaceholder.typicode.com/users")
+text = url.text
+
+data = json.loads(text)
+
+user = data[0]
+print(user['name'])
+
+address = user['address']
+print(address)
+```

@@ -32,7 +32,7 @@ import matplotlib.pyplot as plt
 from skimage import data, img_as_float, img_as_ubyte, io
 ```
 
-## 7.1 Images are arrays ##
+## Lesson 7.1: Images are arrays ##
 
 Images are represented in `scikit-image` using standard `numpy` arrays. This allows maximum interoperability with other libraries in the scientific Python ecosystem, such as `matplotlib` and `scipy`.
 
@@ -120,7 +120,7 @@ An image whose data matrix has type `uint8` is called an 8-bit image. RGB model 
 | 3D grayscale (or volumetric) | (plane, row, column) |
 | 3D multichannel | (plane, row, column, channel) |
 
-## Displaying images with `matplotlib`
+## Lesson 7.2: Displaying images with `matplotlib` ##
 
 
 Start by creating to image variables
@@ -157,7 +157,7 @@ plt.close()
 | *Images can be displayed in `matplotlib` figures to use the library's figure functionalities.* |
 
 
-## Data types and image values ##
+## Lesson 7.3: Data types and image values ##
 
 There are different conventions for representing image values (colors):
 
@@ -253,10 +253,6 @@ plt.show()
 plt.savefig('collection_image.png', dpi=150)
 ```
 
-
-
-
-
 | <img src="https://github.com/CHCAA-EDUX/introduction-to-scientific-computing/blob/main/lessons/figs/collection_images.png?raw=true" alt="coins" width="1200"/> |
 |:--:|
 | *Embedding multiple images with a for loop in one `matplotlib` figure.* |
@@ -271,7 +267,7 @@ Note: `axes.ravel()` is used to turn the array of axes (subplots) into a list th
 array([1, 2, 3, 4, 5, 6])
 ```
 
-## 7.2 3d visualization with `matplotlib` ##
+## 7.4 3d visualization with `matplotlib` ##
 
 [source](https://jakevdp.github.io/PythonDataScienceHandbook/04.12-three-dimensional-plotting.html)
 

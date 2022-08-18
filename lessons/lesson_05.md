@@ -6,12 +6,8 @@
 
 * Explain what a `for` loop does.
 * Correctly write `for` loops to repeat simple calculations.
-* Trace changes to a loop variable as the loop runs.
-* Trace changes to other variables as they are updated by a `for` loop.
-* Use a library function to get a list of filenames that match a wildcard pattern.
 * Write a for loop to process multiple files.
-
-## Repeat actions over iterables ##
+## Lesson 5.1: Repeat actions over iterables ##
 
 In the previous lesson, we found that our inflammation data (`inflammation-01.csv`), the maximum value rises and falls linearly, while the minimum seems to be a step function. Neither trend seemed particularly likely, so either there's a mistake in our calculations or something is wrong with our data. We have a dozen data sets right now. We want to create plots for all of our data sets with a single statement. To do that, we’ll have to teach the computer how to repeat things.
 
@@ -138,7 +134,7 @@ print(len([0, 1, 2, 3]))
 
 `len()` is much faster than any function we could write ourselves, and much easier to read than a two-line loop; it will also give us the length of many other things that we haven’t met yet, so we should always use it when we can.
 
-## Visualize Data from Multiple Files ##
+## Lesson 5.2: Visualize Data from Multiple Files ##
 
 As a final piece to processing our inflammation data, we need a way to get a list of all the files in our data directory whose names start with inflammation- and end with .csv. The `glob` library can help here
 

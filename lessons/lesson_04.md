@@ -1,16 +1,14 @@
 # Lesson 4: Visualization \# 1 #
 
+### Learning outcomes ###
+
+* Data visulization with Python.
+* Plot simple and multiple graphs in a single figure.
+3. Use `seaborn` to make publication-ready graphs
+
 While tabular data formats (see Lesson 3) are good for storing and manipulating heterogenous 2d data, they do not facilitate deep understanding of data. Data visualization is a powerful tool to better understand the properties of our data, it allows us to expose patterns, correlations, and trends that cannot be obtained when data is in a table or dataframe, or, as the mathematician Richard Hamming once said, 'the purpose of computing is insight, not numbers,' and data visualization is one of the best ways to develop that insight. With Python we can use several data visualization modules (ex. `matplotlib`, `seaborn`, `plotly`, `bokeh`) to create complex visualizations both for data understanding and communication.
 
-In this lesson we will focus on `matplotlib` and `seaborn` and you will learn to understand
-
-1. What data visualization is
-2. Data visualization in Python
-3. Matplotlib and Seaborn
-4. Simple 2d visualizations
-    * Histograms    
-
-## Lesson 4.1 ##
+## Lesson 4.1: Data visulization with Python and `matplotlib` ##
 
 [source](https://swcarpentry.github.io/python-novice-inflammation/03-matplotlib/index.html)
 
@@ -107,7 +105,7 @@ The call to `savefig` stores the plot as a graphics file. This can be a convenie
 
 > **_Importing libraries with shortcuts:_** In this lesson we use the `import matplotlib.pyplot` syntax to import the pyplot module of `matplotlib`. However, shortcuts such as `import matplotlib.pyplot as plt` are frequently used. Importing pyplot this way means that after the initial import, rather than writing `matplotlib.pyplot.plot(...)`, you can now write `plt.plot(...)`. Another common convention is to use the shortcut `import numpy as np` when importing the NumPy library. We then can write `np.loadtxt(...)` instead of `numpy.loadtxt(...)`, for example. Some people prefer these shortcuts as it is quicker to type and results in shorter lines of code - especially for libraries with long names! You will frequently see Python code online using a pyplot function with plt, or a NumPy function with np, and it's because they've used this shortcut. It makes no difference which approach you choose to take, but you must be consistent as if you use `import matplotlib.pyplot as plt` then `matplotlib.pyplot.plot(...)` will not work, and you must use `plt.plot(...)` instead. Because of this, when working with other people it is important you agree on how libraries are imported.
 
-## Lesson 4.2 ##
+## Lesson 4.2: Data Visualiation with `seaborn` ##
 [source](https://www.kaggle.com/code/xinyiye123/data-visualization-with-matplotlib-and-seaborn)
 
 In this lesson, we explore the Spotify data set from [lesson 3](link-here).

@@ -2,8 +2,13 @@
 
 [source](https://swcarpentry.github.io/python-novice-inflammation/08-func/index.html)
 
+### Learning Outcomes ###
 
-## Working with Strings ##
+* Create and select elements from strings
+* Explain the dictionary's (hash table's) structure
+* Devise simple tests and documentation for functions
+
+## Lesson 8.1: Working with Strings ##
 
 Remember the string data type `str` from [lesson 2]()? IN Python, strings is a (iterable) sequence of Unicode characters. Python uses unicode today to include every character in all languages and bring uniformity in encoding. Like many other popular programming languages, strings in Python are arrays of bytes representing unicode characters. However, Python does not have a character data type, a single character is simply a string with a length of 1. Square brackets can be used to access elements of the string. Because strings are arrays, they are iterable and we can loop through the characters in a string, with a `for` loop (see [lesson 5]()).
 
@@ -373,7 +378,7 @@ all_books = {
     }
 
 ```
-## More on Functions: Modularity, Testing and Documenting ##
+##  Lesson 8.2: More on Functions: Modularity, Testing and Documenting ##
 
 Once we start putting things in functions in order to re-use them, we need to start testing that those functions are working correctly. Start by writing a function to offset a dataset so that it’s mean value shifts to a user-defined value
 

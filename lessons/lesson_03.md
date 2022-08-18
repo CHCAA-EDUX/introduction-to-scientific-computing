@@ -8,7 +8,7 @@ To write proper programs, we need data types that can contain multiple values an
 
 
 
-## 3.1 Lists ##
+## 3.1: Lists ##
 
 A `list` is a value (a list value) that contains multiple values in an _ordered sequence_
 
@@ -179,7 +179,7 @@ while i < len(captains):
     i = i + 1
 ```
 
-## 3.2 Arrays ##
+## 3.2: Arrays ##
 
 * __numpy__ is the fundamental library for scientific computing in Python. It provides a high-performance multidimensional _array_ object, and _tools_ for working with these arrays.
 * _powerful N-dimensional arrays_ (vectorization, indexing, broadcasting) 
@@ -535,7 +535,7 @@ Figure 1           |  Figure 2
 
 By looking at figures we can conclude that the frequency at which solar magnetic activity is maximum  at nearby 0.1 cycles/year (Figure 2, x-axis) i.e., after every 10 years (1/0.1) each cycle will repeat itself and the magnetic activity increases which means after every 10 years there is a maximum chance of getting an earthquake. Furthermore, from Figure 1 it looks like the last peak is near 2015 then 2025 is more liekly to get an earthquake because the solar magnetic activity is at its peak.
 
-## 3.3 Dataframes ##
+## 3.3: Dataframes ##
 
 
 ### Learning outcomes ###

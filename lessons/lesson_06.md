@@ -6,7 +6,7 @@ Control flow is the order in which the individual python statement, expression a
 
 ---
 
-## Branching with Boolean Values ##
+## Lesson 6.1: Branching with Boolean Values ##
 
 * Boolean errors
 
@@ -206,7 +206,7 @@ if name == 'Kathryn':
 
 * this is an example on program execution that starts with a CASE (`name` test) followed by a SELECTION (`if ... else`) flow where the program bifurcates.
 
-### Flow Control Statements ###
+## Lesson 6.2: Flow Control Statements ##
 
 #### `if` statement ####
 
@@ -456,7 +456,7 @@ for i in range(3, -1, -1):
 0
 ```
 
-## Tidying up and Detecting Problems ##
+## Lesson 6.3: Tidying up and Detecting Problems ##
 
 Returning to our inflammation data, we can now create a function, `visualize()` for visualization of a data set, iterate over the data sets with a `for` loop, and create another function, `detect_problems`, that makes a decision based on the data set's extrema.
 
