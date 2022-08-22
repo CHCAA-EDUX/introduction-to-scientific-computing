@@ -6,7 +6,7 @@
 * Frida Hæstrup (FH)
 * Lasse Hansen (LH)
 * Jan Kostkan (JK)
-* Ekaterina Borsisova (EB)
+* Ekaterina Borisova (EB)
 
 ## Lecture plan ##
 
