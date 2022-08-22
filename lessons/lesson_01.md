@@ -1,13 +1,6 @@
 # Lesson 1: Introduction to the computing platform and  basic computations in Python #
 
-
 ## Lesson 1.1: Jupyter - the computing platform ##
-
-### Learning outcomes ###
-
-1. name the components of the web-based interactive computing platform Jupyter
-2. navigate and explain file paths
-3. compress and uncompress archive file format such as ZIP
 
 ###  The Notebook Interface ###
 
@@ -238,18 +231,18 @@ Let's say we want to move to the `data` directory we saw above. We can use the f
 
 ```bash
 $ cd Desktop
-$ cd shell-lesson-data
+$ cd terminal-lesson-data
 $ cd exercise-data
 ```
 
-These commands will move us from our home directory into our Desktop directory, then into the `shell-lesson-data` directory, then into the `exercise-data` directory. You will notice that `cd` doesn't print anything. This is normal. Many terminal commands will not output anything to the screen when successfully executed. But if we run `pwd` after it, we can see that we are now in `/home/nelle/Desktop/shell-lesson-data/exercise-data`.
+These commands will move us from our home directory into our Desktop directory, then into the `shell-lesson-data` directory, then into the `exercise-data` directory. You will notice that `cd` doesn't print anything. This is normal. Many terminal commands will not output anything to the screen when successfully executed. But if we run `pwd` after it, we can see that we are now in `/home/nelle/Desktop/terminal-lesson-data/exercise-data`.
 
-If we run `ls -F` without arguments now, it lists the contents of `/home/nelle/Desktop/shell-lesson-data/exercise-data`, because that's where we now are:
+If we run `ls -F` without arguments now, it lists the contents of `/home/nelle/Desktop/terminal-lesson-data/exercise-data`, because that's where we now are:
 
 ```bash
 $ pwd
 
-/home/nelle/Desktop/shell-lesson-data/exercise-data
+/home/nelle/Desktop/terminal-lesson-data/exercise-data
 
 $ ls -F
 
@@ -259,9 +252,9 @@ animal-counts/  creatures/  numbers.txt  proteins/  writing/
 We now know how to go down the directory tree (i.e. how to go into a subdirectory), but how do we go up (i.e. how do we leave a directory and go into its parent directory)? We might try the following:
 
 ```bash
-$ cd shell-lesson-data
+$ cd terminal-lesson-data
 
--bash: cd: shell-lesson-data: No such file or directory
+-bash: cd: terminal-lesson-data: No such file or directory
 ```
 
 But we get an error! Why is this?
