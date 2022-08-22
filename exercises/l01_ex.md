@@ -1,6 +1,6 @@
 # Exercises 1 #
 
-## File manipulation ##
+## Pair programming ##
 
 In order for us to be better able to help you solve your problems remotely, we prefer that you have your files in order. So let’s organise a bit:
 
@@ -19,7 +19,7 @@ with zipfile.ZipFile("<path_to_zip_file>", 'r') as zip_ref:
 
 ---
 
-## Practice questions ##
+## Check your understanding ##
 
 1: Which of the following are operators, and which are values?
 
@@ -96,3 +96,7 @@ Windows does not have a direct equivalent, but we can use `copy` with a `+` at t
 copy sample_file.txt+
 ```
 ---
+
+## Practice Questions ##
+
+NA
