@@ -20,4 +20,4 @@
 | 7 | 30-08 | CN: 15:00-17:00 <br /> DK: 09:00-11:00 | Image Processing and Visualization \#2 |  7.1: Images are arrays <br /> 7.2: Displaying images <br /> 7.3: Data type and image values <br /> 7.4: 3d visualiztion | `scikit-image`, `matplotlib` | | SS |
 | 8 | 31-08 | CN: 19:00-21:00 <br /> DK: 13:00-15:00 | Strings, dictionaries, errors and exceptions |  8.1: Working with strings <br /> 8.2: Dictionaries <br /> 8.3: More on functions | `numpy` | | LH |
 | 9 | 01-09 | CN: 15:00-17:00 <br /> DK: 09:00-11:00 |  Files i/o, formats for representing structured data (csv and json) |  9.1: Read and write files <br /> 9.2: CSV files <br /> JSON files | `numpy`, `pandas`, `json`, `requests` | | JK |
-| 10 | 02-09 | CN: 19:00-21:00 <br /> DK: 13:00-15:00 | | | | |LH |
+| 10 | 02-09 |CN: 19:00-21:00 <br /> DK: 13:00-15:00 | | | | |LH |
