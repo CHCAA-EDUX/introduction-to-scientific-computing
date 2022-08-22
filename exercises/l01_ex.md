@@ -21,21 +21,41 @@ with zipfile.ZipFile("<path_to_zip_file>", 'r') as zip_ref:
 
 ## Check your understanding ##
 
-1: Which of the following are operators, and which are values?
+Which of the following are operators, and which are values?
 
 ```py
-*
-'hello'
--88.8
--
-/
-+
-5
+1. *
+2. 'hello'
+3. -88.8
+4. -
+5. /
+6. +
+7. 5
 ```
+
+</details>
+
+<br /> 
+
+</details>
+
+<details>
+  <summary> [Answer] </summary>
+
+1. operator
+2. value
+3. value
+4. operator
+5. operator
+6. operator
+7. value
+
+</details>
+
 
 ---
 
-2. Starting from `/Users/amanda/data`, which of the following commands could Amanda use to navigate to her home directory, which is `/Users/amanda`?
+Starting from `/Users/amanda/data`, which of the following commands could Amanda use to navigate to her home directory, which is `/Users/amanda`?
 
 ```sh
 1. cd .
@@ -49,9 +69,30 @@ with zipfile.ZipFile("<path_to_zip_file>", 'r') as zip_ref:
 9. cd ..
 ```
 
+</details>
+
+<br /> 
+
+</details>
+
+<details>
+  <summary> [Answer] </summary>
+
+1. No: . stands for the current directory.
+2. No: / stands for the root directory.
+3. No: Amanda’s home directory is /Users/amanda.
+4. No: this command goes up two levels, i.e. ends in /Users.
+5. Yes: ~ stands for the user’s home directory, in this case /Users/amanda.
+6. No: this command would navigate into a directory home in the current directory if it exists.
+7. Yes: unnecessarily complicated, but correct.
+8. Yes: shortcut to go back to the user’s home directory.
+9. Yes: goes up one level.
+
+</details>
+
 ---
 
-3. Using the filesystem diagram below, if pwd displays /Users/thing, what will ls -F ../backup display?
+Using the filesystem diagram below, if pwd displays /Users/thing, what will ls -F ../backup display?
 
 1. `../backup: No such file or directory`
 2. `2012-12-01 2013-01-08 2013-01-27`
@@ -63,9 +104,25 @@ with zipfile.ZipFile("<path_to_zip_file>", 'r') as zip_ref:
 |:--:|
 | *File System Challenge 01* |
 
+</details>
+
+<br /> 
+
+</details>
+
+<details>
+  <summary> [Answer] </summary>
+
+No: there _is_ a directory `backup` in `/Users`.
+No: this is the content of `Users/thing/backup`, but with `..`, we asked for one level further up.
+No: see previous explanation.
+Yes: `../backup/` refers to `/Users/backup/`.
+
+</details>
+
 ---
 
-4. Using the filesystem diagram below, if `pwd` displays `/Users/backup`, and `-r` tells `ls` to display things in reverse order, what command(s) will result in the following output:
+Using the filesystem diagram below, if `pwd` displays `/Users/backup`, and `-r` tells `ls` to display things in reverse order, what command(s) will result in the following output:
 
 ```sh
 pnas_sub/ pnas_final/ original/
@@ -79,8 +136,24 @@ pnas_sub/ pnas_final/ original/
 2. `ls -r -F`
 3. `ls -r -F /Users/backup`
 
+</details>
+
+<br /> 
+
+</details>
+
+<details>
+  <summary> [Answer] </summary>
+
+No: `pwd` is not the name of a directory.
+Yes: `ls` without directory argument lists files and directories in the current directory.
+Yes: uses the absolute path explicitly.
+
+</details>
+
 ---
-5. Instead of using an editor to create a file (Windows: `edit <filename>` or Linux: `Vim <filename>`), we can use the following command on Linux:
+
+Instead of using an editor to create a file (Windows: `edit <filename>` or Linux: `Vim <filename>`), we can use the following command on Linux:
 
 ```sh
 touch sample_file.txt
@@ -95,6 +168,25 @@ Windows does not have a direct equivalent, but we can use `copy` with a `+` at t
 ```sh
 copy sample_file.txt+
 ```
+
+</details>
+
+<br /> 
+
+</details>
+
+<details>
+  <summary> [Answer] </summary>
+
+1. The `touch` command generates a new file called `sampe_file.txt` in your current directory. You can observe this newly generated file by typing ls at the command line prompt. `sample_file.txt` can also be viewed in your GUI file explorer.
+2. When you inspect the file with ls `-l`, note that the size of `sample_file.txt` is 0 bytes. In other words, it contains no data. If you open `sample_file.txt` using your text editor it is blank.
+
+3. Some programs do not generate output files themselves, but instead require that empty files have already been generated. When the program is run, it searches for an existing file to populate with its output. The `touch` command allows you to efficiently generate a blank text file to be used by such programs.
+
+
+
+</details>
+
 ---
 
 ## Practice Questions ##
