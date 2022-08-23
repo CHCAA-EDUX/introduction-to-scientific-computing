@@ -113,10 +113,10 @@ Using the filesystem diagram below, if pwd displays /Users/thing, what will ls -
 <details>
   <summary> [Answer] </summary>
 
-No: there _is_ a directory `backup` in `/Users`.
-No: this is the content of `Users/thing/backup`, but with `..`, we asked for one level further up.
-No: see previous explanation.
-Yes: `../backup/` refers to `/Users/backup/`.
+1. No: there _is_ a directory `backup` in `/Users`.
+2. No: this is the content of `Users/thing/backup`, but with `..`, we asked for one level further up.
+3. No: see previous explanation.
+4. Yes: `../backup/` refers to `/Users/backup/`.
 
 </details>
 
@@ -145,9 +145,9 @@ pnas_sub/ pnas_final/ original/
 <details>
   <summary> [Answer] </summary>
 
-No: `pwd` is not the name of a directory.
-Yes: `ls` without directory argument lists files and directories in the current directory.
-Yes: uses the absolute path explicitly.
+1. No: `pwd` is not the name of a directory.
+2. Yes: `ls` without directory argument lists files and directories in the current directory.
+3. Yes: uses the absolute path explicitly.
 
 </details>
 
@@ -180,10 +180,7 @@ copy sample_file.txt+
 
 1. The `touch` command generates a new file called `sampe_file.txt` in your current directory. You can observe this newly generated file by typing ls at the command line prompt. `sample_file.txt` can also be viewed in your GUI file explorer.
 2. When you inspect the file with ls `-l`, note that the size of `sample_file.txt` is 0 bytes. In other words, it contains no data. If you open `sample_file.txt` using your text editor it is blank.
-
 3. Some programs do not generate output files themselves, but instead require that empty files have already been generated. When the program is run, it searches for an existing file to populate with its output. The `touch` command allows you to efficiently generate a blank text file to be used by such programs.
-
-
 
 </details>
 
