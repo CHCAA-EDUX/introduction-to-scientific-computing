@@ -1,6 +1,6 @@
 # Introduction to Scientific Programming: Assignment 1 #
 
-Assigment 1 tests your understanding of basic python syntax, procedural programming with functions, and use of `numpy` arrays. our answers should consist of the code for solving a problem and a stepwise explanation of how and why you have chosen to implement the solution as you have. We suggest that you use a notebook and a heavily commented script,
+Assignment 1 tests your understanding of basic python syntax, procedural programming with functions, and use of `numpy` arrays. Your answers should consist of the code for solving the problems and a step-wise explanation of how and why you have chosen to implement the solution as you have. We suggest that you use a notebook or a heavily commented script.
 
 ## 1. Basic Math ##
 __Task__: Write a function `power_of_y()` that takes two integers as input _x_ and _y_, prints and returns the value of x to the power og y
