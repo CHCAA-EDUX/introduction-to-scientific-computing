@@ -1,7 +1,7 @@
 # Lesson 2: Simple data types, variable assignment, functions, and modules #
 
-
-
+ In programming language terminology, Python in this case, an "expression" is an instruction that combines values and operators (and functions) and always evaluates down to a new value. An expression is opposed to a "statement" that is just a standalone instruction that the Python interpreter can excute. When you type a statement on the command line, Python executes it and displays the result, if there is one. The result of a print statement is a value.
+ 
 ## Lesson 2.1: Simple data types ##
 
 ### Data types (simple) ###
@@ -300,7 +300,7 @@ SyntaxError: positional argument follows keyword argument
 
 In programming, the scope of the variable is the regions of a program that define the visibility of variable.
 
-| <img src="figs/scope.png" alt="variable scope" width="800"/> |
+| <img src="https://github.com/CHCAA-EDUX/introduction-to-scientific-computing/blob/main/lessons/figs/scope.png?raw=true" alt="variable scope" width="800"/> |
 |:--:|
 | *The scope of a variable (i.e., a binding between a name such as 'x' and a value such as 'Local Scope') is the part of your program where the variable is valid (i.e., where the name can be used to refer to the value)* |
 
@@ -480,7 +480,7 @@ None
 * Modularization reduces software complexity and facilitates re-usability
 * NB: Global variables reduces the modularity and flexibility of the program! You avoid global variable by passing variables to function arguments.
 
-| <img src="figs/modular.png" alt="modularization" width="800"/> |
+| <img src="https://github.com/CHCAA-EDUX/introduction-to-scientific-computing/blob/main/lessons/figs/modular.png?raw=true" alt="modularization" width="800"/> |
 |:--:|
 | *Modular programming breaks the code into parts that can be shared across projects and modified independently* |
 
