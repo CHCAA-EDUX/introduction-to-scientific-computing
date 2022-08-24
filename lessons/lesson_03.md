@@ -239,7 +239,7 @@ print(b)                # [[1. 1.]]
 c = np.full((2, 2), 7)  # constant array
 print(c)                # [[7. 7.] [7. 7.]]
 
-d = np.eye(2)   # 2x2 identify matrix
+d = np.eye(2)   # 2x2 identity matrix
 print(d)        # [[1. 0.] [0. 1.]]
 
 e = np.random.random((2, 2))    # array with random floats in the half-open interval [0.0, 1.0) = {x | 0 <= x < 1}
