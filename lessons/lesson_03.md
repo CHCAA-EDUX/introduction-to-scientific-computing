@@ -2,7 +2,7 @@
 
 To write proper programs, we need data types that can contain multiple values and therefore handle large complex data. The `list`, `array`, and `dataframe` data types can store multiple items in a single vairable and is used to store collections of data.
 
-| <img src="figs/series2d.png" alt="tabular data" width="800"/> |
+| <img src="https://github.com/CHCAA-EDUX/introduction-to-scientific-computing/blob/main/lessons/figs/series2d.png?raw=true" alt="tabular data" width="800"/> |
 |:--:|
 | *Tabular inflammation data set in 2d Software Carpentries. Tabular data formats with $m \times n$ (rows-by-columns), e.g., csv, tab-delimited files, fixed field formats, spreadsheets, HTML tables, and SQL dumps* |
 
@@ -191,7 +191,7 @@ while i < len(captains):
 
 
 
-| <img src="figs/numpy_arrays.png" alt="tabular data" width="800"/> |
+| <img src="https://github.com/CHCAA-EDUX/introduction-to-scientific-computing/blob/main/lessons/figs/numpy_arrays.png?raw=true" alt="tabular data" width="800"/> |
 |:--:|
 | *A numpy array is a grid of values, all of the same type, and is indexed by a tuple of nonnegative integers. The number of dimensions is the rank of the array; the shape of an array is a tuple of integers giving the size of the array along each dimension.* |
 
@@ -531,7 +531,7 @@ plt.savefig('figures/disaster_frequency_domain.png')
 
 Figure 1           |  Figure 2
 :-------------------------:|:-------------------------:
-![](figs/disaster_time_domain.png)  |  ![](figs/disaster_frequency_domain.png)
+![](https://github.com/CHCAA-EDUX/introduction-to-scientific-computing/blob/main/lessons/figs/disaster_time_domain.png?raw=true)  |  ![](https://github.com/CHCAA-EDUX/introduction-to-scientific-computing/blob/main/lessons/figs/disaster_frequency_domain.png?raw=true)
 
 By looking at figures we can conclude that the frequency at which solar magnetic activity is maximum  at nearby 0.1 cycles/year (Figure 2, x-axis) i.e., after every 10 years (1/0.1) each cycle will repeat itself and the magnetic activity increases which means after every 10 years there is a maximum chance of getting an earthquake. Furthermore, from Figure 1 it looks like the last peak is near 2015 then 2025 is more liekly to get an earthquake because the solar magnetic activity is at its peak.
 
@@ -551,7 +551,7 @@ By looking at figures we can conclude that the frequency at which solar magnetic
 
 Dataframes are heterogeneous tabular data object that represent Python's equivalent of an (Excel) spreadsheet. Like spreadsheets, dataframes have 2 dimensions or axes, it has rows and columns (also known as series). On top of a dataframe, you will see the name of the columns and on the left side an index. The dataframes is the primary data structure in the `pandas` library. `pandas` is a Python library used for working with data sets. It has functions for analyzing, cleaning, exploring, and manipulating data. `pandas` is designed to make working with 'relational' or 'labeled' data both easy and intuitive. It aims to be the fundamental high-level building block for doing practical, real-world data analysis in Python.
 
-| <img src="figs/dataframe.png" alt="tabular data" width="800"/> |
+| <img src="https://github.com/CHCAA-EDUX/introduction-to-scientific-computing/blob/main/lessons/figs/dataframe.png?raw=true" alt="tabular data" width="800"/> |
 |:--:|
 | *dataframe* |
 
