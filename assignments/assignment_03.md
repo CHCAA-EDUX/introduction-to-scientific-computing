@@ -27,7 +27,7 @@ Input and output example:
 1.0
 ```
 
-## 3.  Non-linear Polynomial Fit ##
+## 3.  Non-linear polynomial fit ##
 
 __Task__: Plot the following `x` and `y` variables in a 2d plot
 
