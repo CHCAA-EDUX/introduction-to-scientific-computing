@@ -2,7 +2,7 @@
 
 In this lesson we will use `scikit-image` to do simple image processing in Python. `scikit-image` is an open-source image processing library for the Python programming language. It includes algorithms for segmentation, geometric transformations, color space manipulation, analysis, filtering, morphology, feature detection, and more.
 
-We will be using the following magic statements for `matplotlib` in this session (is you use a notebook):
+We will be using the following magic statements for `matplotlib` in this session (if you use a notebook):
 
 ```py
 %matplotlib inline
@@ -61,7 +61,7 @@ print(type(coins))
 print(coins.dtype)
 print(coins.shape)
 plt.imshow(coins, cmap='gray')
-plt.savefig('figures/coins.png', dpi=150)
+plt.savefig('coins.png', dpi=150)
 ```
 
 | <img src="https://github.com/CHCAA-EDUX/introduction-to-scientific-computing/blob/main/lessons/figs/coins.png?raw=true" alt="coins" width="400"/> |
@@ -82,15 +82,23 @@ print("Values min/max:", cat.min(), cat.max())
 plt.imshow(cat)
 plt.savefig('cat.png', dpi=150)
 ```
+| <img src="https://github.com/CHCAA-EDUX/introduction-to-scientific-computing/blob/main/lessons/figs/cat.png?raw=true" alt="coins" width="400"/> |
+|:--:|
+| *a 'cat' array* |
+
 
 These are just NumPy arrays. E.g., we can make a red square by using standard array slicing and manipulation
 
 ```py
 cat[10:110, 10:110, :] = [255, 0, 0]
 plt.imshow(cat)
-plt.savefig('figures/cat_red.png', dpi=150)
+plt.savefig('cat_red.png', dpi=150)
 plt.close()
 ```
+
+| <img src="https://github.com/CHCAA-EDUX/introduction-to-scientific-computing/blob/main/lessons/figs/cat_red.png?raw=true" alt="coins" width="400"/> |
+|:--:|
+| *a 'cat' array with a red square * |
 
 Images can also include transparent regions by adding a 4th dimension, called an alpha layer.
 
@@ -147,7 +155,7 @@ ax1.vlines([202, 300], 0, img1.shape[0], colors='magenta', linewidth=3, label='S
 ax1.plot([168, 190, 200], [400, 200, 300], color='white', linestyle='--', label='Side angle')
 ax1.legend();
 
-plt.savefig('figures/image_display_matplotlib.png', dpi=150)
+plt.savefig('image_display_matplotlib.png', dpi=150)
 plt.show()
 plt.close()
 ```
@@ -269,8 +277,6 @@ array([1, 2, 3, 4, 5, 6])
 
 ## 7.4 3d visualization with `matplotlib` ##
 
-[source](https://jakevdp.github.io/PythonDataScienceHandbook/04.12-three-dimensional-plotting.html)
-
 `matplotlib` was originally designed for 2d plotting, but today it offers a set of tools for three-dimensional data visualization through the `mplot3d` toolkit
 
 
@@ -283,7 +289,7 @@ Once this submodule is imported, a three-dimensional axes can be created by pass
 ```py
 fig = plt.figure()
 ax = plt.axes(projection='3d')
-plt.savefig('figures/axes_3d.png', dpi=300)
+plt.savefig('axes_3d.png', dpi=300)
 plt.close()
 ```
 
@@ -310,19 +316,25 @@ xline = np.sin(zline)
 yline = np.cos(zline)
 ax.plot3D(xline, yline, zline, 'gray')
 
+
 # Data for three-dimensional scattered points
 zdata = 15 * np.random.random(100)
 xdata = np.sin(zdata) + 0.1 * np.random.randn(100)
 ydata = np.cos(zdata) + 0.1 * np.random.randn(100)
 
 ax.scatter3D(xdata, ydata, zdata, c=zdata, cmap='Greens')
-plt.savefig('trigonometric_spiral.png', dpi=300)
+
+ax.set_xlabel('x')
+ax.set_ylabel('y')
+ax.set_zlabel('z')
+plt.tight_layout()
+plt.savefig('trigonometric_spiral.png', dpi=150)
 plt.close()
 ```
 
 | <img src="https://github.com/CHCAA-EDUX/introduction-to-scientific-computing/blob/main/lessons/figs/trigonometric_spiral.png?raw=true" alt="trigo-spiral" width="600"/> |
 |:--:|
-| *caption* |
+| *Trigonometric spiral* |
 
 Notice that by default, the scatter points have their transparency adjusted to give a sense of depth on the page.
 
@@ -338,7 +350,7 @@ x = np.linspace(-6, 6, 30)
 y = np.linspace(-6, 6, 30)
 
 X, Y = np.meshgrid(x, y)
-Z =  sinosoidal_3d(X, Y)
+Z = sinosoidal_3d(X, Y)
 
 fig = plt.figure()
 ax = plt.axes(projection='3d')
