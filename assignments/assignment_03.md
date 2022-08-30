@@ -2,7 +2,7 @@
 
 ## 1. Temperature measurement ##
 
-__Task__: create a function, `temp_tranform()`, that transforms temperature measured in celsius to fahrenheit and fahrenheit to celcius depending on an argument. The relationship between fahrenheit to celcius is  
+__Task__: create a function, `temp_tranform()`, that transforms temperature measured in Celsius to Fahrenheit and Fahrenheit to Celcius depending on an argument. The relationship between Fahrenheit to Celcius is  
 
 $$ F^{\circ} = \frac{9}{5} C^{\circ} + 32$$
 
