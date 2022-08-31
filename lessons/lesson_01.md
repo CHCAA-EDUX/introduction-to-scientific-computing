@@ -89,7 +89,7 @@ The usual commands for code editors:
 
 Plus the usual shortcuts for select all, cut, copy, paste, undo, etc.
 
-## ## Lesson 1.2 File system ##
+## Lesson 1.2 File system ##
 
 In order for Python/JupyterLab to use  to use certain files you need to direct it to where they can find them. This means, you need to know how to navigate your file system. Therefore it is important that you understand how your computer is organised.
 
