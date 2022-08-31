@@ -110,8 +110,8 @@ np.savetxt('array.csv', a, delimiter=',', fmt='%f')# to avoid scientific notatio
 
 Python Pickle is used to `serialize` and `deserialize` a python object structure. Any object on python can be pickled so that it can be saved on disk. At first Python pickle serialize the object and then converts the object into a character stream so that this character stream contains all the information necessary to reconstruct the object in another python script. Note that the pickle module is not secure against erroneous or maliciously constructed data according to the documentation. So, never unpickle data received from an untrusted or unauthenticated source.
 
-Python Pickle dump
-In this section, we are going to learn, how to store data using Python pickle. To do so, we have to import the pickle module first. Then use `pickle.dump()` function to store the object data to the file. pickle.dump() function takes 3 arguments. The first argument is the object that you want to store. The second argument is the file object you get by opening the desired file in write-binary (wb) mode. And the third argument is the key-value argument. This argument defines the protocol. There are two type of protocol - `pickle.HIGHEST_PROTOCOL` and `pickle.DEFAULT_PROTOCOL`. See the sample code to know how to dump data using pickle.
+#### Python Pickle dump
+To use Python pickle, we have to import the pickle module first. Then use `pickle.dump()` function to store the object data to the file. pickle.dump() function takes 3 arguments. The first argument is the object that you want to store. The second argument is the file object you get by opening the desired file in write-binary (wb) mode. And the third argument is the key-value argument. This argument defines the protocol. There are two type of protocol - `pickle.HIGHEST_PROTOCOL` and `pickle.DEFAULT_PROTOCOL`. See the sample code to know how to dump data using pickle.
 
 Write ('pickle') to file
 
